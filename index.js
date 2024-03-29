@@ -20,6 +20,9 @@ const resolvers = {
     },
     aboutPaul: () => {
       return 'I like docker'
+    },
+    aboutNicol: () => {
+      return 'I love soap operas, I am crazy about them'
     }
   },
 };
