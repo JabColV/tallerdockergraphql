@@ -9,6 +9,15 @@ const typeDefs = gql`
   },
   type Query {
     aboutPaul(message: String!): String
+  },
+  type Query {
+    aboutNicol(message: String!): String
+  },
+  type Query {
+    aboutSebastian(message: String!): String
+  },
+  type Query {
+    aboutDaniel(message: String!): String
   }
 `;
 
@@ -26,6 +35,9 @@ const resolvers = {
     },
     aboutSebastian: () => {
       return 'I don`t know what to do with my life, whether to be a video game developer or 3D designer'
+    },
+    aboutDaniel: () => {
+      return 'Im a Hamburger lover'
     }
   },
 };
