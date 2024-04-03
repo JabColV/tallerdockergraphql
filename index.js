@@ -21,6 +21,9 @@ const typeDefs = gql`
   },
   type Query {
     aboutNatalia(message: String!): String
+  },
+  type Query {
+    aboutJuan(message: String!): String
   }
 `;
 
@@ -44,7 +47,11 @@ const resolvers = {
     },
     aboutNatalia: () => {
       return "I love sandwiches"
-    }
+    },
+    aboutJuan: () => {
+      return "I love animals and nature, and also playing basketball"
+    },
+    
   },
 };
 
