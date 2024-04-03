@@ -5,6 +5,9 @@ const path = require('path');
 // Define el esquema de GraphQL
 const typeDefs = gql`
   type Query {
+    aboutJuanda(message: String!): String
+  },
+  type Query {
     hello(message: String!): String
   },
   type Query {
