@@ -5,6 +5,9 @@ const path = require('path');
 // Define el esquema de GraphQL
 const typeDefs = gql`
   type Query {
+    aboutJuanda(message: String!): String
+  },
+  type Query {
     hello(message: String!): String
   },
   type Query {
@@ -32,6 +35,9 @@ const resolvers = {
   Query: {
     hello: (_, { message }) => {
         return `¡Hola, ${message}! Un saludo por parte del profe `;
+    },
+    aboutJuanda: () => {
+      return 'I like to play soccer. More play soccer than watch it'
     },
     aboutPaul: () => {
       return 'I like docker'
