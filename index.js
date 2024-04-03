@@ -23,6 +23,9 @@ const resolvers = {
     },
     aboutNicol: () => {
       return 'I love soap operas, I am crazy about them'
+    },
+    aboutNicol: () => {
+      return 'I don`t know what to do with my life, whether to be a video game developer or 3D designer'
     }
   },
 };
