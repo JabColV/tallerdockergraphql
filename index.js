@@ -40,7 +40,7 @@ const resolvers = {
       return 'I like to play soccer. More play soccer than watch it'
     },
     aboutPaul: () => {
-      return 'I like docker'
+      return 'I love docker'
     },
     aboutNicol: () => {
       return 'I love soap operas, I am crazy about them'
