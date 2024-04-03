@@ -9,7 +9,11 @@ const typeDefs = gql`
   },
   type Query {
     aboutPaul(message: String!): String
+  },
+  type Query {
+    aboutNatalia(message: String!): String
   }
+
 `;
 
 // Define los resolvers de GraphQL
@@ -26,6 +30,9 @@ const resolvers = {
     },
     aboutSebastian: () => {
       return 'I don`t know what to do with my life, whether to be a video game developer or 3D designer'
+    },
+    aboutNatalia: () => {
+      return "I love sandwiches"
     }
   },
 };
