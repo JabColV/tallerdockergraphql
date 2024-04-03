@@ -18,6 +18,9 @@ const resolvers = {
     hello: (_, { message }) => {
         return `¡Hola, ${message}! Un saludo por parte del profe `;
     },
+    aboutJuanda: () => {
+      return 'I like to play soccer. More play soccer than watch it'
+    },
     aboutPaul: () => {
       return 'I like docker'
     },
